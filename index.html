@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memory Café is a warm, welcoming place for coffee, connection and moments worth keeping.">
+  <meta name="theme-color" content="#F8F4EE">
+  <title>Memory Café | Every Cup Holds a Memory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="site-shell">
+    <!-- Navigation: matching the wireframe's left-brand/right-links arrangement. -->
+    <header class="site-header">
+      <a href="#home" class="brand" aria-label="Memory Café, go to home">Memory Café<span class="brand-period">.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products / Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 01 / Home: text on left, photographic café image on right. -->
+      <section class="section section--split home-section" id="home" aria-labelledby="home-title">
+        <div class="section-copy">
+          <p class="section-eyebrow"><span class="section-number">01</span> Home</p>
+          <h1 id="home-title">Every Cup<br>Holds a <em>Memory.</em></h1>
+          <p class="section-description hero-description">A cosy place to enjoy your favourite coffee, share meaningful moments, and create unforgettable memories.</p>
+          <a class="button button--primary" href="#products">View Menu <span class="button-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="media-frame hero-frame">
+          <img src="images/cafe-interior.jpg" alt="A warm café interior filled with sunlight, wooden tables and greenery" width="720" height="720" fetchpriority="high">
+        </div>
+      </section>
+
+      <!-- 02 / About: introduction on left, one local HTML5 video on right. -->
+      <section class="section section--split about-section" id="about" aria-labelledby="about-title">
+        <div class="section-copy">
+          <p class="section-eyebrow"><span class="section-number">02</span> About</p>
+          <h2 id="about-title">About the <em>Café</em></h2>
+          <p class="section-description">Memory Café is a welcoming space where great coffee meets meaningful connections. Whether you're studying, catching up with friends, or enjoying a quiet afternoon, every visit becomes a special memory.</p>
+        </div>
+        <div class="media-frame video-frame">
+          <video controls preload="metadata" playsinline poster="images/cafe-interior.jpg" aria-label="Memory Café introduction video showing the café atmosphere and signature drinks">
+            <source src="videos/memory-cafe-introduction.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </section>
+
+      <!-- 03 / Products: three cards, with precisely two menu photographs. -->
+      <section class="section menu-section" id="products" aria-labelledby="menu-title">
+        <p class="section-eyebrow"><span class="section-number">03</span> Products / Services</p>
+        <h2 id="menu-title">Featured <em>Menu</em></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-image">
+              <img src="images/iced-latte.jpg" alt="Iced latte with milk swirling through coffee in a glass" width="720" height="720" loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <h3>Iced Latte</h3>
+              <p>Smooth espresso blended with chilled milk.</p>
+              <p class="menu-price">RM 12.00</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image">
+              <img src="images/matcha-latte.jpg" alt="Iced matcha latte in a glass with rich green matcha and milk" width="720" height="720" loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <h3>Matcha Latte</h3>
+              <p>Rich Japanese matcha with creamy milk.</p>
+              <p class="menu-price">RM 14.00</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image pastry-visual">
+              <div class="croissant-art" role="img" aria-label="Illustration of a golden butter croissant">
+                <span class="croissant-horn croissant-horn--left"></span>
+                <span class="croissant-fold croissant-fold--left"></span>
+                <span class="croissant-fold croissant-fold--middle"></span>
+                <span class="croissant-fold croissant-fold--right"></span>
+                <span class="croissant-horn croissant-horn--right"></span>
+              </div>
+              <span class="pastry-tag">BAKED WITH LOVE</span>
+            </div>
+            <div class="menu-card-content">
+              <h3>Butter Croissant</h3>
+              <p>A golden, flaky pastry baked to perfection.</p>
+              <p class="menu-price">RM 9.00</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 04 / Contact: three Lucide-style line icons on left, display-only form on right. -->
+      <section class="section section--split contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-copy">
+          <p class="section-eyebrow"><span class="section-number">04</span> Contact</p>
+          <h2 id="contact-title">Visit <em>Memory Café</em></h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div><span class="contact-label">Address</span><span class="contact-value">Location details coming soon</span></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              </span>
+              <div><span class="contact-label">Opening Hours</span><span class="contact-value">Daily, 9:00 AM – 9:00 PM</span></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <div><span class="contact-label">Email</span><a class="contact-value contact-email" href="mailto:hello@memorycafe.example">hello@memorycafe.example</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-panel">
+          <h3>Contact Form</h3>
+          <p class="form-note">Display only</p>
+          <form class="contact-form" aria-label="Contact form preview (display only)">
+            <label class="visually-hidden" for="visitor-name">Name</label>
+            <input id="visitor-name" name="name" type="text" placeholder="Name" autocomplete="name">
+            <label class="visually-hidden" for="visitor-email">Email</label>
+            <input id="visitor-email" name="email" type="email" placeholder="Email" autocomplete="email">
+            <label class="visually-hidden" for="visitor-message">Message</label>
+            <textarea id="visitor-message" name="message" placeholder="Message" rows="4"></textarea>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-brand">Memory Café<span class="brand-period">.</span></span>
+      <a href="#top">Back to Top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

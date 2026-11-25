@@ -1,0 +1,67 @@
+MEMORY CAFÉ — HOW TO REPLACE IMAGES AND VIDEO
+=============================================
+
+All images and video are in separate, editable files. None is embedded
+inside index.html or style.css.
+
+FOLDER STRUCTURE
+Memory_Cafe_Website/
+  index.html
+  style.css
+  MEDIA_REPLACEMENT_GUIDE.txt
+  README.txt
+  images/
+    cafe-interior.jpg
+    iced-latte.jpg
+    matcha-latte.jpg
+  videos/
+    memory-cafe-introduction.mp4
+
+EASIEST METHOD: REPLACE A FILE, KEEP ITS FILENAME
+1. Put your new image or video in its corresponding folder.
+2. Give it exactly the same filename as the item to replace.
+3. Replace/overwrite the old file.
+4. Open index.html and refresh the browser (Ctrl+F5, if needed).
+
+FILE TO REPLACE              WHERE IT APPEARS
+images/cafe-interior.jpg     HOME section hero photo AND ABOUT video poster
+images/iced-latte.jpg        Featured Menu: Iced Latte card
+images/matcha-latte.jpg      Featured Menu: Matcha Latte card
+videos/memory-cafe-introduction.mp4   ABOUT section video player
+
+No HTML or CSS editing is required when replacing with the SAME FILE NAMES
+and the same file formats (.jpg for images and .mp4 for the video).
+
+IF YOU WANT TO USE A DIFFERENT FILENAME OR FORMAT
+Open index.html using Notepad, VS Code, etc. and edit the relevant path:
+
+  <img src="images/cafe-interior.jpg" ...>
+  <img src="images/iced-latte.jpg" ...>
+  <img src="images/matcha-latte.jpg" ...>
+
+For the video, edit the <source> path:
+  <source src="videos/memory-cafe-introduction.mp4" type="video/mp4">
+
+You can also change the video's thumbnail/poster:
+  <video ... poster="images/cafe-interior.jpg" ...>
+
+For PNG photos, also use the .png extension in the HTML path.
+For a different video format, update the type attribute accordingly.
+
+MEDIA TIPS
+- Photos: JPEG or WebP generally keeps the website lightweight.
+- Use clear landscape photos with the main subject away from the edges,
+  because CSS may crop photos to fit the wireframe's rectangles.
+- Video: MP4 (H.264 codec) offers good browser compatibility.
+- Keep images/ and videos/ inside the website folder, beside index.html.
+- Do not move assets without also updating paths.
+- There are exactly THREE photographic image files and ONE video file.
+- The third menu card (Butter Croissant) is a CSS illustration, not a photo.
+  Its appearance can be changed in style.css under .croissant-art.
+
+This site works from local files. It does not require a media host,
+although Google Fonts are loaded online when available.
+
+IMPORTANT
+After making changes, keep index.html, style.css, images/, and videos/
+together when copying, zipping, or submitting the project.
